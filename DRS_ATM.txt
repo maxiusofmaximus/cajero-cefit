@@ -1,0 +1,97 @@
+DEFINICIÓN DE LOS REQUISITOS DEL SOFTWARE.
+
+1. Funcionalidades:
+
+    Creación de cuentas:
+
+        * Los usuarios deben poder crear nuevas cuentas con un nombre de usuario, contraseña y saldo inicial.
+        * Se debe verificar la unicidad del nombre de usuario.
+        * Se debe aplicar una política de contraseñas segura (longitud mínima, complejidad, etc.).
+
+    Inicio de sesión:
+
+        * Los usuarios existentes deben poder iniciar sesión con su nombre de usuario y contraseña.
+        * Se deben implementar mecanismos de autenticación segura (por ejemplo, hash de contraseñas).
+        * Se deben establecer límites de intentos de inicio de sesión fallidos.
+
+    Consultas de saldo:
+
+        * Los usuarios deben poder ver el saldo actual de su cuenta.
+        * Se debe mostrar la información de manera clara y precisa.
+
+    Depósitos:
+
+        * Los usuarios deben poder depositar dinero en su cuenta.
+        * Se debe validar la cantidad y el formato del depósito.
+        * Se debe actualizar el saldo de la cuenta de manera precisa.
+
+    Retiros:
+
+        * Los usuarios deben poder retirar dinero de su cuenta.
+        * Se debe validar la cantidad y el formato del retiro.
+        * Se debe verificar que el retiro no exceda el saldo disponible.
+        * Se debe dispensar el efectivo de manera segura y precisa.
+
+    Registro de transacciones:
+
+        * Se debe registrar cada transacción realizada (depósitos, retiros, consultas de saldo).
+        * Los registros deben incluir información como fecha, hora, tipo de transacción, monto y número de cuenta.
+        * Los registros deben almacenarse de forma segura y accesible para auditoría.
+
+
+2. Interacción con el Usuario:
+
+    Interfaz gráfica de usuario (GUI):
+
+        * La aplicación debe tener una GUI amigable y fácil de usar.
+        * La GUI debe ser intuitiva y navegable para usuarios de todos los niveles de experiencia.
+        * Se debe utilizar un diseño visual atractivo y consistente.
+
+    Mensajes y retroalimentación:
+
+        * La aplicación debe proporcionar mensajes claros y concisos al usuario para guiarlo a través de las operaciones.
+        * Se debe mostrar retroalimentación en tiempo real sobre las acciones del usuario.
+        * Se deben mostrar mensajes de error claros y descriptivos en caso de problemas.
+
+
+3. Comunicación con la Base de Datos:
+
+    Almacenamiento de datos seguro:
+    
+        * Las contraseñas de los usuarios deben almacenarse utilizando un algoritmo de hash seguro (por ejemplo, SHA-256).
+        * Los datos de las transacciones deben almacenarse de forma segura y protegida contra accesos no autorizados.
+
+    Integridad de datos:
+
+        * Se deben implementar mecanismos para garantizar la integridad de los datos almacenados en la base de datos.
+        * Se deben realizar copias de seguridad de los datos de manera regular para evitar pérdidas.
+
+    Eficiencia de las consultas:
+
+        * Las consultas a la base de datos deben optimizarse para un rendimiento rápido y eficiente.
+        * Se deben utilizar índices y estructuras de datos adecuadas para mejorar el acceso a los datos.
+
+
+4. Requisitos adicionales:
+
+    Seguridad:
+
+        * La aplicación debe implementar medidas de seguridad para proteger los datos de los usuarios y prevenir fraudes.
+        * Se debe utilizar un protocolo de comunicación seguro para la comunicación con la base de datos.
+        * La aplicación debe ser resistente a ataques y vulnerabilidades.
+
+    Disponibilidad:
+
+        * La aplicación debe estar disponible para los usuarios las 24 horas del día, los 7 días de la semana.
+        * Se deben implementar mecanismos de alta disponibilidad para garantizar la continuidad del servicio.
+
+    Escalabilidad:
+
+        * La aplicación debe ser escalable para admitir un número creciente de usuarios y transacciones.
+        * Se debe utilizar una arquitectura de software flexible y modular para facilitar la escalabilidad.
+
+    Mantenimiento:
+
+        * El código de la aplicación debe ser fácil de leer, comprender y mantener.
+        * Se deben documentar adecuadamente las funcionalidades y la arquitectura del software.
+        * Se deben implementar pruebas unitarias y de integración para garantizar la calidad del código.

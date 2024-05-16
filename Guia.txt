@@ -1,0 +1,70 @@
+Pasos a seguir:
+
+    1. Definición de los requisitos del software (DRS): El primer paso es definir los requisitos de su software. Esto incluye determinar qué funcionalidades debe tener su software, cómo debe interactuar con los usuarios y cómo debe comunicarse con la base de datos.
+
+    2. Diseño de la arquitectura del software (DAS): Una vez que haya definido los requisitos de su software, debe diseñar la arquitectura de su software. Esto incluye determinar qué componentes tendrá su software y cómo interactuarán entre sí.
+
+    3. Desarrollo del software (DS): Una vez que haya diseñado la arquitectura de su software, puede comenzar a desarrollar el software. Esto implica escribir el código para cada componente de su software.
+
+    4. Prueba del software (PS): Una vez que haya desarrollado su software, debe probarlo exhaustivamente para asegurarse de que funciona correctamente. Esto incluye probar todas las funcionalidades de su software y asegurarse de que sea seguro y confiable.
+
+    5. implementación del software (IS): Una vez que haya probado su software, puede implementarlo en un entorno de producción. Esto implica instalar el software en los servidores y configurarlo para que funcione con la base de datos y otros sistemas.
+
+Comunicación con la base de datos:
+
+    La comunicación con la base de datos es una parte importante del desarrollo de un cajero automático. El software debe poder comunicarse con la base de datos para realizar transacciones, verificar saldos y obtener información sobre los clientes.
+
+    Existen varias formas de comunicarse con una base de datos. Puede utilizar una API de base de datos, como JDBC o ODBC, o puede utilizar un controlador de base de datos, como MySQL Connector/J o PostgreSQL JDBC.
+
+--------------------------------------------------------------------------------------------------------------------
+
+1. Gestión de Usuarios:
+
+    Creación e Inicio de Sesión:
+
+        * Los usuarios deben poder crear nuevas cuentas con un nombre de usuario, contraseña y saldo inicial.
+        * Los usuarios existentes deben poder iniciar sesión utilizando su nombre de usuario y contraseña.
+
+2. Operaciones de la Cuenta:
+
+    Saldo: Los usuarios deben poder ver el saldo actual de su cuenta. 
+
+    Depósito: Los usuarios deben poder depositar dinero en su cuenta.
+
+    Retiro: Los usuarios deben poder retirar dinero de su cuenta, asegurándose de que el monto del retiro no exceda el saldo disponible.
+
+3. Almacenamiento de Datos:
+
+    Almacenamiento Seguro de Contraseñas:
+
+        Las contraseñas deben almacenarse de forma segura utilizando un algoritmo de hash (por ejemplo, SHA-256) para evitar la exposición de texto plano. 
+
+    Datos Persistentes:
+
+        Los datos del usuario (incluido el saldo) deben almacenarse de forma persistente, ya sea en una base de datos local o en un servidor remoto.
+
+4. Interfaz de Usuario:
+
+    GUI: La aplicación debe tener una interfaz gráfica de usuario (GUI) amigable para facilitar las interacciones del usuario. 
+    
+    Manejo de Errores: La aplicación debe manejar los errores con elegancia y proporcionar retroalimentación adecuada al usuario.
+
+5. Registro de Transacciones:
+
+    Registros de Transacciones: Las transacciones (depósitos, retiros) deben registrarse con fines de auditoría.
+
+6. Integración con Google Drive (Opcional):
+
+    Sincronización de Datos: Opcionalmente, los datos del usuario y los registros de transacciones se pueden sincronizar con Google Drive para realizar copias de seguridad y permitir la accesibilidad.
+
+    Estructura del Código:
+
+    Organización de Funciones:
+        Dividir el código en funciones bien definidas con responsabilidades claras. 
+        
+        Diseño Modular: Considera usar un patrón de diseño modular para separar las preocupaciones y mejorar la mantenibilidad.
+
+    Pruebas:
+
+    Pruebas exhaustivas:
+        Prueba exhaustivamente la aplicación para garantizar que funcione correctamente en diversos escenarios.

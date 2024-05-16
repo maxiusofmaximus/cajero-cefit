@@ -1,0 +1,52 @@
+DISEÑO DE LA ARQUITECTURA DEL SOFTWARE.
+
+1. Interfaz de Usuario (GUI):
+
+    * La GUI será el punto de interacción principal entre el usuario y el sistema.
+    * Se utilizará una interfaz gráfica amigable y fácil de usar, con iconos claros y textos intuitivos.
+    * Se implementará un diseño visual atractivo y consistente con la identidad de la marca.
+
+2. Capa de Lógica de Negocios:
+
+    * Esta capa encapsulará la lógica del negocio del sistema, incluyendo la validación de usuarios, el manejo de transacciones, la consulta de saldos y la actualización de cuentas.
+    * Se implementarán patrones de diseño de software para mejorar la modularidad, la reusabilidad y el mantenimiento del código.
+
+3. Capa de Acceso a Datos:
+
+    * Esta capa se encargará de la interacción con la base de datos, almacenando y recuperando los datos necesarios para las operaciones del sistema.
+    * Se utilizará un controlador de base de datos genérico para abstraer la implementación específica de la base de datos y facilitar la portabilidad.
+
+4. Base de Datos:
+
+    * La base de datos almacenará toda la información del sistema, incluyendo datos de usuarios, transacciones, saldos de cuentas y registros de auditoría.
+    * Se diseñará una estructura de base de datos eficiente y segura que cumpla con los requisitos de integridad, disponibilidad y confidencialidad de los datos.
+
+5. Capa de Comunicación:
+
+    * Esta capa gestionará la comunicación entre el sistema y dispositivos externos, como el cajero automático físico, la impresora de recibos y la red bancaria.
+    * Se utilizarán protocolos de comunicación seguros y confiables para garantizar la integridad y disponibilidad de las transacciones.
+
+6. Módulo de Seguridad:
+
+    * Este módulo implementará medidas de seguridad para proteger el sistema contra accesos no autorizados, fraudes y ataques cibernéticos.
+    * Se utilizarán técnicas de cifrado, autenticación y autorización para proteger los datos sensibles de los usuarios.
+
+Interacciones entre Componentes:
+
+    * La GUI interactuará con la capa de lógica de negocios para enviar las solicitudes del usuario y recibir las respuestas del sistema.
+    * La capa de lógica de negocios interactuará con la capa de acceso a datos para almacenar, recuperar y actualizar los datos necesarios para las operaciones del sistema.
+    * La capa de acceso a datos se comunicará con la base de datos utilizando consultas SQL u otro lenguaje de acceso a datos.
+    * La capa de comunicación se interconectará con dispositivos externos utilizando protocolos de comunicación específicos como RS-232, TCP/IP o USB.
+    * El módulo de seguridad se integrará con todos los componentes del sistema para proteger los datos y las transacciones.
+
+Consideraciones de Diseño:
+
+    Modularidad: La arquitectura debe diseñarse de forma modular, con componentes independientes y bien definidos que puedan ser desarrollados, probados y mantenidos de forma individual.
+
+    Escalabilidad: La arquitectura debe ser escalable para soportar un número creciente de usuarios y transacciones a medida que el sistema crece.
+
+    Seguridad: La seguridad debe ser una prioridad en el diseño de la arquitectura, implementando medidas adecuadas para proteger los datos y las transacciones contra accesos no autorizados.
+
+    Disponibilidad: El sistema debe estar disponible para los usuarios las 24 horas del día, los 7 días de la semana, implementando mecanismos de alta disponibilidad para garantizar la continuidad del servicio.
+
+    Facilidad de mantenimiento: La arquitectura debe diseñarse de forma que sea fácil de mantener y actualizar, utilizando código limpio, documentado y bien organizado.
