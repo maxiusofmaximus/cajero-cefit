@@ -4,6 +4,7 @@ import os
 import sqlite3
 import asyncio
 import time
+from PyQt5 import QtWidgets
 # from tkinter import ttk
 # from PIL import Image, ImageTk
 
@@ -46,7 +47,7 @@ class Cajero:
         
     def create_window(self):
         self.root.title("ATM New Horizons")
-        self.root.iconbitmap(create_directory()[0] + "/cajero_venv/cajero/img/favicon.ico")
+        self.root.iconbitmap(create_directory()[0] + "/cajero-cefit/img/favicon.ico")
         self.root.geometry("700x550")
         self.root.config(bg="white")
         self.root.resizable(False, False)
@@ -72,13 +73,13 @@ async def main():
         print(installs)
     else:
         print("\nYa está instalado PyQt5\n")
-    # root = Tk()
-    # cajero = Cajero(root)
-    # cajero.create_window()
-    # cajero.create_frame()
-    # cajero.create_label()
-    # cajero.create_canvas()
-    # root.mainloop()
+    root = Tk()
+    cajero = Cajero(root)
+    cajero.create_window()
+    cajero.create_frame()
+    cajero.create_label()
+    cajero.create_canvas()
+    root.mainloop()
 
 if __name__ == "__main__":
     asyncio.run(main())
